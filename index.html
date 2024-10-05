@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <title>QR Reader App</title>
+</head>
+<body>
+    <div id="app">
+        <div id="login-screen">
+            <h1>Login</h1>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Autenticar</button>
+            </form>
+        </div>
+
+        <div id="qr-screen" style="display: none;">
+            <h1>Escanear QR</h1>
+            <video id="qr-video" style="width: 100%;"></video>
+            <button id="scan-qr-btn">Iniciar Escaneo</button>
+            <p id="qr-result">Resultado: Ninguno</p>
+            <button id="register-btn" disabled>Registrar Ingreso</button>
+        </div>
+    </div>
+
+    <div>   
+        <a href="https://www.flaticon.es/iconos-gratis/codigo-qr" title="código qr iconos">Código qr iconos creados por small.smiles - Flaticon</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
