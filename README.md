@@ -1,0 +1,1 @@
+# ProyectoLeturaQR_PWA
